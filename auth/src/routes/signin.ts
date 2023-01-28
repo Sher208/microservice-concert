@@ -1,7 +1,6 @@
 import express, { Request, Response } from "express";
 import { body } from "express-validator";
-import { ValidationError } from "../errors/validation-error";
-import { validateRequest } from "../middlewares/validate-request";
+import { ValidationError, validateRequest } from "@conctickets/common";
 import { User } from "../models/user";
 import { Password } from "../services/password";
 
